@@ -6,7 +6,7 @@
         {
             Console.WriteLine("----------Welcome To Logical Program----------- ");
             bool end = true;
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.End Of The Program");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
@@ -27,6 +27,10 @@
                         primenumber.Prime();
                         break;
                     case 4:
+                        ReverseNumber reversenumber = new ReverseNumber();
+                        reversenumber.Reverse();
+                        break;
+                    case 5:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
