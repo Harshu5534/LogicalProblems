@@ -6,7 +6,7 @@
         {
             Console.WriteLine("----------Welcome To Logical Program----------- ");
             bool end = true;
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.End Of The Program");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
@@ -23,6 +23,10 @@
                         number.Perfect();
                         break;
                     case 3:
+                        PrimeNumber primenumber = new PrimeNumber();
+                        primenumber.Prime();
+                        break;
+                    case 4:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
