@@ -19,7 +19,7 @@ namespace LogicalProblems
                 rev = rev * 10 + rem;
                 num = num / 10;
             }
-            Console.WriteLine(rev);
+            Console.WriteLine("Reverse Number is "+rev);
         
         }
     }
