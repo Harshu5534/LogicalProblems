@@ -32,8 +32,8 @@
                         break;
                     case 5:
                         Temprature temprature=new Temprature();
-                        temprature.CeltoFeh();
-                        temprature.FehtoCel();
+                        temprature.CelsiusToFehrenheit();
+                        temprature.FehrenheitToCelsius();
                         break;
                     case 6:
                         end = false;
