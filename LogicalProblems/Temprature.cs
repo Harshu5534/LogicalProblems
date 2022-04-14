@@ -8,7 +8,7 @@ namespace LogicalProblems
 {
     public class Temprature
     {
-        public void CeltoFeh()
+        public void CelsiusToFehrenheit()
         {
             int F;
             Console.WriteLine("Enter The Temprature In Celcius.");
@@ -16,7 +16,7 @@ namespace LogicalProblems
             F = (C * 9 / 5) + 32;
             Console.WriteLine("Temprature In Celsius To Fahrenheit Is:" + F);
         }
-        public void FehtoCel()
+        public void FehrenheitToCelsius()
         {
             float c,v;
             Console.WriteLine("Enter The Temprature In Fahrenheit Is.");
