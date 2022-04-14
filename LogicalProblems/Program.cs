@@ -6,7 +6,7 @@
         {
             Console.WriteLine("----------Welcome To Logical Program----------- ");
             bool end = true;
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.End Of The Program");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.DayOf Week\n7.End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
@@ -36,6 +36,10 @@
                         temprature.FehtoCel();
                         break;
                     case 6:
+                        DayOfWeek week = new DayOfWeek();
+                        week.Week();
+                        break;
+                    case 7:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
