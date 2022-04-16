@@ -24,11 +24,7 @@ namespace LogicalProblems
         }
         public int fibonacciwithrecursion(int num)
         {
-            if (num == 1)
-            {
-                return 0; ;
-            }
-            if (num == 2)
+            if (num <= 1)
             {
                 return 1;
             }
