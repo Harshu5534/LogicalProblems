@@ -11,18 +11,15 @@ namespace LogicalProblems
         public void Payment()
         {
             Console.WriteLine("Enter The Loan Amount ");
-            int P=Convert.ToInt32(Console.ReadLine());
+           double principal = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter The Number Of Years");
-            int Y = Convert.ToInt32(Console.ReadLine());
+            double year = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Interest Rate");
-            int R = Convert.ToInt32(Console.ReadLine());
-            var n = 12 * Y;
-            Console.WriteLine(n);
-            float r = R / 1200;
-            Console.WriteLine(r);
-            double Payment = ((P * r) / (1 -Math.Pow((1 + r),-n)));
-            Console.WriteLine("Monthly Payment Is: "+Payment);          
-
+            double rateOfInterest = Convert.ToInt32(Console.ReadLine());
+            double n = 12 * year;//year in monthly
+            double rateOfInterestMonthly = rateOfInterest / (12 * 100);//rate of interest monthly
+            double payment =(principal * rateOfInterestMonthly)/(1 - Math.Pow((1 + rateOfInterestMonthly), (-n)));
+            Console.WriteLine("Monthly Payment Is: "+payment);
         }
     }
 }
