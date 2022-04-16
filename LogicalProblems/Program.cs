@@ -6,8 +6,8 @@
         {
             Console.WriteLine("----------Welcome To Logical Program----------- ");
             bool end = true;
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.DayOf Week\n7.MonthlyPayment\n8.VendingMachine\n9.End Of The Program");
-            while (end == true)
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.DayOf Week\n7.MonthlyPayment\n8.End Of The Program");
+            while (end)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -31,7 +31,7 @@
                         reversenumber.Reverse();
                         break;
                     case 5:
-                        Temprature temprature=new Temprature();
+                        Temprature temprature = new Temprature();
                         temprature.CelsiusToFehrenheit();
                         temprature.FehrenheitToCelsius();
                         break;
@@ -44,10 +44,6 @@
                         payment.Payment();
                         break;
                     case 8:
-                        VendingMachine machine = new VendingMachine();
-                        machine.ChangingNotes();
-                        break;
-                    case 9:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
@@ -57,7 +53,6 @@
 
                 }
             }
-
         }
     }
 }
