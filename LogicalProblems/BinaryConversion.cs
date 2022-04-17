@@ -10,20 +10,17 @@ namespace LogicalProblems
     {
         public void DecimalToBinary()
         {
-            int i;
+            int i = 1, binary = 0, rem;
             Console.WriteLine("Enter Decimal Number: ");
             int num = Convert.ToInt32(Console.ReadLine());
-            int[] a=new int [num];
-            for ( i = 0; num > 0; i++)
+            while (num > 0)
             {
-                a[i] = num % 2;
+                rem = num % 2;
                 num = num / 2;
+                binary = binary + (rem * i);
+                i = i * 10;
             }
-            Console.WriteLine("Binary Of Given Number");
-            for(i=i-1;i>=0;i--)
-            {
-                Console.Write(" "+a[i]);
-            }
+            Console.WriteLine("Binary Of Given Number" +binary);
         }
     }
 }
