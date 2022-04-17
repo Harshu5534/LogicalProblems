@@ -6,7 +6,7 @@
         {
             Console.WriteLine("----------Welcome To Logical Program----------- ");
             bool end = true;
-            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.DayOf Week\n7.MonthlyPayment\n8.Stopwatch\n9.BinaryConversion\n10.End Of The Program");
+            Console.WriteLine("1.FibonacciSeries\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.TempratureConversion\n6.DayOf Week\n7.MonthlyPayment\n8.Stopwatch\n9.BinaryConversion\n10.CouponNumber\n11.End Of The Program");
             while (end)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
@@ -52,6 +52,10 @@
                         conversion.DecimalToBinary();
                         break;
                     case 10:
+                        CouponNumber couponnumber = new CouponNumber();
+                        couponnumber.Coupon();
+                        break;
+                    case 11:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
