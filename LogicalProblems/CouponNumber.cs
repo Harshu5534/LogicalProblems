@@ -8,25 +8,33 @@ namespace LogicalProblems
 {
     public class CouponNumber
     {
-        public void Coupon()
+        public void PrintCoupon(int n)
         {
-            int distinct = 0, count = 0;
-            Console.WriteLine("Enter the number of distinct coupon: ");
-            int couponnumber = Convert.ToInt32(Console.ReadLine());
-            bool[] is_collected = new bool[couponnumber]; 
-            while(distinct<couponnumber)
+            int count = 0;
+            int check = RandomNumber(n);
+            Console.WriteLine("The Coupon Number Is:" + n);
+            Console.WriteLine("The Random Got:" + check);
+            while (n > 0)
             {
-                Random random = new Random();
-                int option=random.Next(1,100);
-                int new_coupon = (int)(random.NextDouble() * couponnumber);
-                count++;
-                if (!is_collected[new_coupon])
+                if (check == 0)
                 {
-                    distinct++;
-                    is_collected[new_coupon] = true;
+                    Console.WriteLine("Congratulation!! get the coupon number in first attempt");
+                    break;
                 }
+
+
+                count++;
+                Console.WriteLine("Count To Get Coupon Number is:" + count);
+                n--;
             }
-            Console.WriteLine("Total random number needed to have all distinct coupons: " + count);
+            Console.WriteLine("To Get Distinct Cou opon number,The Number of Times randoom number used: " + count);
         }
+        private static int RandomNumber(int n)
+        {
+            Random random = new Random();
+            n=random.Next(1,9);
+            return n;
+        }
+              
     }
 }

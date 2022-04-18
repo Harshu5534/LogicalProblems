@@ -47,7 +47,11 @@
                         VendingMachine machine = new VendingMachine();
                         machine.ChangingNotes();
                         break;
+<<<<<<< HEAD
                     case 9:
+=======
+                    case 9:    
+>>>>>>> UC11-CouponNumber
                         StopwatchProgram program = new StopwatchProgram();
                         program.Measure();
                         break;
@@ -57,7 +61,11 @@
                         break;
                     case 11:
                         CouponNumber couponnumber = new CouponNumber();
+<<<<<<< HEAD
                         couponnumber.Coupon();
+=======
+                        couponnumber.PrintCoupon(5);
+>>>>>>> UC11-CouponNumber
                         break;
                     case 12:
                         end = false;
