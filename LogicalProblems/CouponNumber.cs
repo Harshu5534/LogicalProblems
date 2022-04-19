@@ -21,8 +21,6 @@ namespace LogicalProblems
                     Console.WriteLine("Congratulation!! get the coupon number in first attempt");
                     break;
                 }
-
-
                 count++;
                 Console.WriteLine("Count To Get Coupon Number is:" + count);
                 n--;
