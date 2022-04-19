@@ -16,7 +16,7 @@ namespace LogicalProblems
             Console.WriteLine("The Random Got:" + check);
             while (n > 0)
             {
-                if (check == 0)
+                if (check == n)
                 {
                     Console.WriteLine("Congratulation!! get the coupon number in first attempt");
                     break;
