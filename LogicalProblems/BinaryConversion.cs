@@ -10,11 +10,8 @@ namespace LogicalProblems
     {
         public void DecimalToBinary()
         {
-<<<<<<< HEAD
             int i = 1, binary = 0, rem;
-=======
             int i = 0, binary = 1, rem;
->>>>>>> UC11-CouponNumber
             Console.WriteLine("Enter Decimal Number: ");
             int num = Convert.ToInt32(Console.ReadLine());
             while (num > 0)
@@ -24,11 +21,8 @@ namespace LogicalProblems
                 binary = binary + (rem * i);
                 i = i * 10;
             }
-<<<<<<< HEAD
             Console.WriteLine("Binary Of Given Number" +binary);
-=======
             Console.WriteLine("Binary Of Given Number: " +binary);
->>>>>>> UC11-CouponNumber
         }
     }
 }
